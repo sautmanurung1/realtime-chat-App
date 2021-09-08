@@ -2,11 +2,12 @@ const express = require('express')
 const path = require('path')
 
 const app = express()
-const http = require('http').createServer(app)
+const http = require('http')
+const server = http.createServer(app)
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-const io = require('socket.io')(http)
+const io = require('socket.io')(server)
 io.on('connection', socket=>{
     console.log('Connected Ready')
 
@@ -20,6 +21,6 @@ io.on('connection', socket=>{
 
 
 const PORT = process.env.PORT || 3000
-http.listen(PORT, ()=>{
+server.listen(PORT, ()=>{
     console.log('Server is running on port', PORT);
 })
