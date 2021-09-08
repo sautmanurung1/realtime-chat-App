@@ -2,15 +2,17 @@
   "name": "chattime",
   "version": "1.0.0",
   "description": "Realtime Chat App",
-  "main": "index.js",
+  "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Saut Manurung",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.12",
-    "serverless-http": "^2.7.0"
+    "nodemon": "^2.0.12"
   },
   "dependencies": {
     "express": "^4.17.1",

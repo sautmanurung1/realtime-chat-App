@@ -17,6 +17,7 @@ btnSend.addEventListener('click', (e)=>{
     sendMsg(msgText.value)
     msgText.value = ''
     msgText.focus()
+    chatBox.scrollTop = chatBox.scrollHeight;
 })
 
 const sendMsg = message =>{
@@ -32,6 +33,7 @@ const sendMsg = message =>{
 
 socket.on('sendToAll', msg=>{
     display(msg, 'other-message')
+    chatBox.scrollTop = chatBox.scrollHeight;
 })
 
 const display = (msg, type) =>{
