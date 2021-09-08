@@ -23,33 +23,33 @@
                 <div class="chat-content">
                     <div class="message">
                         <div class="message-row other-message">
-                            <div class="message-title">
+                            <!-- <div class="message-title">
                                 👻<span>Saut Manurung</span>
                             </div>
                             <div class="message-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis recusandae natus impedit incidunt, mollitia cupiditate veritatis nulla! Perspiciatis sequi adipisci sapiente illum in ipsa earum expedita quibusdam consectetur eius.
+                                Hello
                             </div>
                             <div class="message-time">
                                 September 2021
-                            </div>
+                            </div> -->
                         </div>
                         <div class="message-row you-message">
-                            <div class="message-title">
+                            <!-- <div class="message-title">
                                 👻<span>User 01</span>
                             </div>
                             <div class="message-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis recusandae natus impedit incidunt, mollitia cupiditate veritatis nulla! Perspiciatis sequi adipisci sapiente illum in ipsa earum expedita quibusdam consectetur eius.
+                                Ok
                             </div>
                             <div class="message-time">
                                 September 2021
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <!----------------->
                 <form class="msg-text">
                     <input type="text" name="msg" id="msg" placeholder="Type Message Here....." autocomplete="off">
-                    <button>
+                    <button id="btn-send">
                         <i class="fas fa-paper-plane">Send</i>
                     </button>
                 </form>
@@ -58,5 +58,8 @@
 
 
     </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
