@@ -4,7 +4,7 @@
   "description": "Realtime Chat App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "author": "Saut Manurung",
   "license": "ISC",
