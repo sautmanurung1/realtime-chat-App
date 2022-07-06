@@ -9,7 +9,7 @@
   "author": "Saut Manurung",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.19"
   },
   "dependencies": {
     "express": "^4.17.1",
